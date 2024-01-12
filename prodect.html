@@ -1,0 +1,254 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <style>
+         body{ 
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider{
+            width: 900px;
+            height: 650px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .slides{
+            width: 500%;
+            height: 500px;
+            display: flex;
+        }
+        .slides input{
+            display: none;
+        }
+        .slide{
+            width: 20%;
+            transition: 2s;
+        }
+        .slide img{
+            width: 900px;
+            height: 650px;
+        }
+        .auto{
+            position: absolute;
+            width: 800px;
+            margin-top: 600px;
+            display: flex;
+            justify-content: center;
+        }
+        .auto div{
+            border: 2px solid white;
+            padding: 5px;
+            border-radius: 10px;
+            transition: 1s;
+        }
+        .auto div:not(:last-child){
+            margin-right: 30px;
+        }
+        #radio1:checked ~ .first{
+            margin-left: 0;
+        }
+        #radio2:checked ~ .first{
+            margin-left: -20%;
+        }
+        #radio3:checked ~ .first{
+            margin-left: -40%;
+        }
+        #radio4:checked ~ .first{
+            margin-left: -60%;
+        }
+        #radio1:checked ~ .auto .auto1{
+            background-color: blue;
+        }
+        #radio2:checked ~ .auto .auto2{
+            background-color: blue;
+        }
+        #radio3:checked ~ .auto .auto3{
+            background-color: blue;
+        }
+        #radio4:checked ~ .auto .auto4{
+            background-color: blue;
+        }
+        .photo{
+            margin-top: -700px;
+        }
+        .photos{
+            margin-left:-950px;
+        }
+        .photos1{
+            margin-left:-590px;
+            padding-top: -900px;
+            margin-top: -510px;     
+        }
+        .photos2{
+            padding-top: -1200px;
+            margin-top: -415px;
+            margin-left: -230px;
+        }
+        .photos3{
+            margin-left: -950px;
+            margin-top: 100px;
+        }
+        .photos4{
+            margin-left: -590px;
+            padding-top: -700px;
+            margin-top: -413px;
+        }
+        .photos5{
+            padding: top -1200px; 
+            margin-top: -413px;
+            margin-left: -230px ;
+        }
+        .pht{
+            width: 300px;
+            height: 200px;
+            margin-top: 2500px;
+
+        }
+        .pht1{
+            width: 300px;
+            height: 200px;
+            margin-top: 100px;
+
+        }
+        .pht2{
+            width: 300px;
+            height: 200px;
+        }
+        .pht3{
+            width: 300px;
+            height: 200px;
+        }
+        .pht4{
+            width: 300px;
+            height: 200px;
+        }
+        .pht5{
+            width: 300px;
+            height: 200px;
+        }
+        button{
+            color: black;
+            padding: 8px;
+            border-radius: 15px;
+        }
+        .item {
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color: crimson;
+          font-size: 20px;
+          margin-left: -20px;
+        }
+        
+    </style> -->
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" id="radio1" name="radios">
+            <input type="radio" id="radio2" name="radios">
+            <input type="radio" id="radio3" name="radios">
+            <input type="radio" id="radio4" name="radios">
+            <div class="slide first">
+                <img src="pexels6.jpg">
+            </div>
+            <div class="slide">
+                <img src="pexels5.jpg">
+            </div>
+            <div class="slide">
+                <img src="pexels15.jpg">
+            </div>
+            <div class="slide">
+                <img src="pexels8.jpg">
+            </div>
+
+            <div class="auto">
+                <div class="auto1"></div>
+                <div class="auto2"></div>
+                <div class="auto3"></div>
+                <div class="auto4"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter = counter + 1;
+            if(counter>4){
+                counter = 1;
+            }
+        },2500);
+    </script>
+    <br><br><br><br>
+    <div class="photo">
+        <div class="photos">
+            <img class="pht" src="pexels13.jpg">
+            <h3>Power Glass</h3>
+            <p>I am a Rk opticals customer for the last 5-6 years <br>
+                 and find their customer services excellent. <br>
+                  The customer service professional.
+                </p>
+                <h5>&#8377 2000</h5>
+                <button><a href="">Buy now</a></button>
+        </div>
+        <div class="photos1">
+            <img class="pht1" src="pexels12.jpg">
+            <h3>Power Glass</h3>
+            <p>I am a Rk opticals customer for the last 5-6 years <br>
+                 and find their customer services excellent. <br>
+                  The customer service professional.
+                </p>
+                <h5>&#8377 1800</h5>
+                <button><a href="">Buy now</a></button>
+        </div>
+        <div class="photos2">
+            <img class="pht2" src="pexels3.jpg">
+            <h3>Sun Glass</h3>
+            <p>I am a Rk opticals customer for the last 5-6 years <br>
+                 and find their customer services excellent. <br>
+                  The customer service professional.
+                </p>
+                <h5>&#8377 3000</h5>
+                <button><a href="">Buy now</a></button>
+        </div> 
+        <div class="photos3">
+            <img class="pht3" src="pexels17.jpg">
+            <h3>Power Glass</h3>
+            <p>I am a Rk opticals customer for the last 5-6 years <br>
+                 and find their customer services excellent. <br>
+                  The customer service professional.
+                </p>
+                <h5>&#8377 2500</h5>
+                <button><a href="">Buy now</a></button>
+        </div>
+        <div class="photos4">
+            <img class="pht4" src="pexels4.jpg">
+            <h3>Power & Sun Glass</h3>
+            <p>I am a Rk opticals customer for the last 5-6 years <br>
+                 and find their customer services excellent. <br>
+                  The customer service professional.
+                </p>
+                <h5>&#8377 2000 + 1500</h5>
+                <button type="submit"><a href="">Buy now</a></button>
+        </div>
+        <div class="photos5">
+            <img class="pht5" src="pexels11.jpg">
+            <h3>Power & Normal Glass</h3>
+            <p>I am a Rk opticals customer for the last 5-6 years <br>
+                 and find their customer services excellent. <br>
+                  The customer service professional.
+                </p>
+                <h5>&#8377 2000 + 1000</h5>
+                <button><a href="">Buy now</a></button>
+        </div>         
+    </div>
+    <p class="item">The product is using<br><br> to so confortable<br><br> and the customer<br><br>Our overall favorite<br><br>the were glasses<br><br>took the top spot<br><br>it makes lots of<br><br>attractive looks and style<br><br>they can also protect<br><br>the sensitive skin<br><br>your eyes form skin<br><br>cancer and wrinkles.<br><br>But beyond fashion,<br><br>the best brand.</p>
+</body>
+</html>

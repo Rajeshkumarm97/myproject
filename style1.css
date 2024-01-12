@@ -1,0 +1,53 @@
+body{
+    background-color: cornsilk;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+}
+.items img{
+    width:500px;
+    height: 400px;
+}
+.rk{
+    width: 500px;
+    height: 400px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(250, 37, 72);
+
+}
+.itm{
+     font-size: 20px;
+     width: 500px;
+     height: 400px;
+     padding: 10px;
+     color: rgb(250, 37, 72);
+}
+.ped{
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(250, 37, 72);
+}
+.was{
+    display: flex;
+    width: 800px;
+    height: 20px;
+    justify-content: space-between;
+    margin-left: 500px;
+}
+.was .oc{
+    height: 120px;
+    width: 100px;
+    padding-top: 80px;
+}
+.id{
+    font-size: 25px;
+    width: 800px;
+    padding-top: 55px;
+    margin-left: 200px;
+    font-weight: bold;
+    color: rgb(250, 37, 72);
+}

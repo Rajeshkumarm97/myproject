@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 900px;
+    height: 650px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 900px;
+    height: 650px;
+}
+.auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
+}
+.auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.auto div:not(:last-child){
+    margin-right: 30px;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio1:checked ~ .auto .auto1{
+    background-color: blue;
+}
+#radio2:checked ~ .auto .auto2{
+    background-color: blue;
+}
+#radio3:checked ~ .auto .auto3{
+    background-color: blue;
+}
+#radio4:checked ~ .auto .auto4{
+    background-color: blue;
+}
+.photo{
+    margin-top: -700px;
+}
+.photos{
+    margin-left:-950px;
+}
+.photos1{
+    margin-left:-590px;
+    padding-top: -900px;
+    margin-top: -510px;     
+}
+.photos2{
+    padding-top: -1200px;
+    margin-top: -415px;
+    margin-left: -230px;
+}
+.photos3{
+    margin-left: -950px;
+    margin-top: 100px;
+}
+.photos4{
+    margin-left: -590px;
+    padding-top: -700px;
+    margin-top: -413px;
+}
+.photos5{
+    padding: top -1200px; 
+    margin-top: -413px;
+    margin-left: -230px ;
+}
+.pht{
+    width: 300px;
+    height: 200px;
+    margin-top: 2500px;
+
+}
+.pht1{
+    width: 300px;
+    height: 200px;
+    margin-top: 100px;
+
+}
+.pht2{
+    width: 300px;
+    height: 200px;
+}
+.pht3{
+    width: 300px;
+    height: 200px;
+}
+.pht4{
+    width: 300px;
+    height: 200px;
+}
+.pht5{
+    width: 300px;
+    height: 200px;
+}
+button{
+    color: black;
+    padding: 8px;
+    border-radius: 15px;
+}
+.item {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: crimson;
+  font-size: 20px;
+  margin-left: -20px;

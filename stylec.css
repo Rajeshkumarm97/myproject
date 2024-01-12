@@ -1,0 +1,12 @@
+body{
+    width: 0;
+    height: 0;
+    display: flex;
+}
+.cont{
+    height: 20px;
+    justify-content: space-between;
+}
+.cont .ro{
+    padding-top: 100px;
+}
